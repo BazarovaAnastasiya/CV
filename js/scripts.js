@@ -78,3 +78,10 @@ function emailTest(input) {
 
 
 
+const burgerBtn = document.querySelector('.burger')
+if (burgerBtn) {
+  burgerBtn.addEventListener('click', function () {
+    document.querySelector('.burger span').classList.toggle('active');
+    document.querySelector('.header').classList.toggle("active");
+  })
+}

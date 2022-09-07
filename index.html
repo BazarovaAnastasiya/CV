@@ -30,7 +30,8 @@
         <li></li>
       </ul>
     </div>
-
+    <!-- burger menu -->
+    <div class="burger" bis_skin_checked="1"> <span></span> </div>
     <!--
 			Container
 		-->
@@ -45,6 +46,12 @@
         <div class="menu">
           <nav class="menu__tabs tabs">
             <ul class="tabs__nav">
+              <li class="tabs__nav-btn active" type="button" data-type="#home-card">
+                <a href="#about-card">
+                  <span class="icon fa fa fa-home" aria-hidden="true"></span>
+                  <span class="link">Home</span>
+                </a>
+              </li>
               <li class="tabs__nav-btn active" type="button" data-type="#about-card">
                 <a href="#about-card">
                   <span class="icon fa fa-user-o" aria-hidden="true"></span>
@@ -118,6 +125,52 @@
       </div>
 
       <div class="card">
+        <!-- 
+          Home - card
+         -->
+        <div class="card__inner tabs__content-item active" id="home-card">
+          <div class="card-wrap">
+            <div class="content home">
+              <div class="home-card__card-started">
+
+                <!--
+              				Home - card	Profile
+              				-->
+                <div class="home-card__profile no-photo">
+
+                  <!-- profile image -->
+                  <div class="profile__photo">
+                    <img src="images/profile.jpg" alt="">
+                  </div>
+                  <div class="wrapp">
+                    <!-- profile titles -->
+                    <div class="title ">Anastasiya Bazarova</div>
+                    <!--<div class="subtitle">Web Designer</div>-->
+                    <div class="subtitle typed-text">HTML Deweloper</div>
+                  </div>
+                  <div class="wrapp">
+                    <!-- profile socials -->
+                    <div class="social">
+                      <a target="_blank" href="https://www.linkedin.com/in/anastasiya-bazarova-9a9043172/"
+                        title="linkedin"><span class="fa fa-linkedin-square">
+                        </span></a>
+                      <a target="_blank" href="https://github.com/BazarovaAnastasiya" title="github"><span
+                          class="fa fa-github"></span></a>
+                    </div>
+
+                    <!-- profile buttons -->
+                    <div class="lnks">
+                      <a href="CV.pdf" download class="download-lnk">
+                        <span class="text">Download CV</span>
+                        <span class="fa fa-download"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- 
       				Card - About
       			-->

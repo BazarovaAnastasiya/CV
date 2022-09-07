@@ -734,4 +734,18 @@ font-size: 0;}
 .home-card{
     display: block;
 }
+.card,
+.card__inner{
+    height: 100vh;
+    max-height: 100vh;
+}
+.skills .row,
+.row-content {
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.skill,
+.row-content__content {
+    width: 55%;
+}
 }

@@ -20,6 +20,7 @@ function onTabClick(item) {
     }
   });
 }
+if (tabs) { document.querySelector(".tabs__nav-btn").click(); }
 const form = document.getElementById("form");
 form.addEventListener("submit", formSend);
 

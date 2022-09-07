@@ -266,6 +266,10 @@ select {
   text-decoration: none;
   margin: 0 auto;
 }
+#home-card,
+.home-card{
+    display: none;
+}
 .home-card__profile{
     display: grid;
     grid-template-columns: 60%;

@@ -79,10 +79,36 @@ function emailTest(input) {
 
 
 
-const burgerBtn = document.querySelector('.burger')
-if (burgerBtn) {
-  burgerBtn.addEventListener('click', function () {
-    document.querySelector('.burger span').classList.toggle('active');
-    document.querySelector('.header').classList.toggle("active");
-  })
-}
+// const burgerBtn = document.querySelector('.burger')
+// if (burgerBtn) {
+//   burgerBtn.addEventListener('click', function () {
+//     document.querySelector('.burger span').classList.toggle('active');
+//     document.querySelector('.header').classList.toggle("active");
+//   })
+// }
+
+const burg = document.querySelector(".burger");
+
+burg.addEventListener("click", function () {
+  burg.classList.toggle("active");
+  if (burg.classList.contains("active")) {
+    document.querySelector(".burger span").classList.add("active");
+    document.querySelector(".header").classList.add("active");
+  } else {
+    document.querySelector(".burger span").classList.remove("active");
+    document.querySelector(".header").classList.remove("active");
+  }
+});
+
+const nav = document.querySelector(".menu__tabs");
+
+nav.addEventListener("click", function () {
+  burg.classList.toggle("active");
+  if (burg.classList.contains("active")) {
+    document.querySelector(".burger span").classList.add("active");
+    document.querySelector(".header").classList.add("active");
+  } else {
+    document.querySelector(".burger span").classList.remove("active");
+    document.querySelector(".header").classList.remove("active");
+  }
+});

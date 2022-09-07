@@ -736,8 +736,8 @@ font-size: 0;}
 }
 .card,
 .card__inner{
-    height: 90vh;
-    max-height: 90vh;
+    height: 80vh;
+    max-height: 80vh;
 }
 .skills .row,
 .row-content {

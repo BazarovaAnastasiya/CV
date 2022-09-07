@@ -730,4 +730,8 @@ font-size: 0;}
   .burger span.active {
     background: transparent;
   }
+  #home-card,
+.home-card{
+    display: block;
+}
 }

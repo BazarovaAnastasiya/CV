@@ -736,8 +736,8 @@ font-size: 0;}
 }
 .card,
 .card__inner{
-    height: 100vh;
-    max-height: 100vh;
+    height: 90vh;
+    max-height: 90vh;
 }
 .skills .row,
 .row-content {
@@ -747,5 +747,8 @@ font-size: 0;}
 .skill,
 .row-content__content {
     width: 55%;
+}
+body{
+    padding-top: 2vh;
 }
 }

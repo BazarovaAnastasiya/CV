@@ -95,9 +95,6 @@ select {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.container {
   top: 50%;
   left: 50%;
   width: 76vw;
@@ -106,7 +103,10 @@ select {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
+.main-content{
+  display: flex;
+  width: 100%;
+}
 .card-started {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,7 +348,10 @@ color: #101010;
   border-radius: 4px;
 }
 
-.tabs__nav-btn a span {
+
+.tabs__nav-btn a  {
+    display: flex;
+  flex-direction: column;
   color: #000;
 }
 
@@ -628,10 +631,9 @@ font-size: 0;}
 
 @media (max-width:1030px) {
     .container{
-        flex-direction: column;
-        height: 90vh;
+        height: 100%;
         width: 100%;
-        position: absolute;
+        position: fixed;
         top: 20px;
         left: 0;
         transform: translate(0);
@@ -648,18 +650,25 @@ font-size: 0;}
      transform: translateX(0);
         z-index: 99999999;
     }
+    .main-content{
+flex-direction: column;
+width: 90%;
+margin: 0 0 0 auto;
+    }
  
     .card-started{
        flex-direction: row;
-          justify-content: center;
-         height: 20vh;
-      width: 80%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: min-content;
+      width: 100%;
+      padding-top: 10px;
+      overflow: visible;
     }
     .profile{
       display: flex;
-      gap: 30px;
-      height: 20vh;
-      width: 100%;
+      justify-content: center;
+      gap: 10px;
     }
     .profile__wrapper{
       display: flex;
@@ -678,9 +687,16 @@ font-size: 0;}
      .card-started .subtitle{
         font-size: 1pc;
      }
+     .profile__link{
+display: flex;
+gap: 20px;
+align-items: center;
+border-top: 1px solid;
+     }
      .social,
      .lnks{
-       margin-top: 10px;
+       margin-top: 0px;
+       border-top: 0;
      }
      
     .burger {

@@ -629,7 +629,7 @@ font-size: 0;}
 @media (max-width:1030px) {
     .container{
         flex-direction: column;
-        height: auto;
+        height: 90vh;
         width: 100%;
         position: absolute;
         top: 20px;
@@ -641,7 +641,7 @@ font-size: 0;}
         position: fixed;
        transform: translateX(-100%);
        left: 0;
-      top: 20px;
+      top: 20vh;
        transition: all 0.5s;
     }
      .header.active{
@@ -651,17 +651,38 @@ font-size: 0;}
  
     .card-started{
        flex-direction: row;
-       width: 100%;
-       height: 20vh;
+          justify-content: center;
+         height: 20vh;
+      width: 80%;
     }
     .profile{
       display: flex;
+      gap: 30px;
+      height: 20vh;
+      width: 100%;
+    }
+    .profile__wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
     }
   
     .card-started .profile__photo{
-      width: 200px;
-      height: 200px;
+      width: 20%;
+      margin: auto;
     }
+    .card-started .title{
+      font-size: 2pc;
+    }
+     .card-started .subtitle{
+        font-size: 1pc;
+     }
+     .social,
+     .lnks{
+       margin-top: 10px;
+     }
+     
     .burger {
     position: relative;
     left: 20px;

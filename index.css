@@ -635,6 +635,7 @@ font-size: 0;}
         top: 20px;
         left: 0;
         transform: translate(0);
+        overflow: hidden;
     }
     .header{
         position: fixed;

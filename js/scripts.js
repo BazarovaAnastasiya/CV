@@ -112,3 +112,23 @@ nav.addEventListener("click", function () {
     document.querySelector(".header").classList.remove("active");
   }
 });
+
+const select = document.querySelector('select');
+
+select.addEventListener('change',  changeLanguage);
+
+
+
+function changeLanguage() {
+    let hash = select.value;
+    console.log(hash);
+    for (let key in i18Obj) {
+        let elem = document.querySelector('.lng-' + key);
+        if (elem) {
+            elem.innerHTML = i18Obj[key][hash];
+        }
+
+    }
+}
+
+changeLanguage();

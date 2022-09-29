@@ -304,19 +304,14 @@ color: #101010;
   opacity: 0;
   width: 100%;
   height: auto;
- transform: scale(0);
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+ transform: translateY(-100%);
+ transition: all .8s;
 }
 
 .tabs__content-item.active{
   visibility: visible;
   opacity: 1;
-transform: scale(1);
-  -webkit-transition: all 0.9s ease-in-out;
-  -o-transition: all 0.9s ease-in-out;
-  transition: all 0.9s ease-in-out;
+transform: translateY(0)
 }
 
 .tabs {
